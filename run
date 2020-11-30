@@ -1,0 +1,11 @@
+#! /bin/bash
+
+function terminate {
+    echo "Goodbye"
+    kill %1 %2
+}
+
+trap terminate INT
+
+go run cors/server.go &
+go run client.go
