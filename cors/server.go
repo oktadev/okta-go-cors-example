@@ -28,6 +28,7 @@ func PutMessage(c *gin.Context) {
 func OptionMessage(c *gin.Context) {
 	c.Header("Access-Control-Allow-Origin", "http://localhost:8080")
 	c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT")
+	c.Header("Access-Control-Allow-Headers", "X-Token")
 }
 
 func main() {
