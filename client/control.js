@@ -35,6 +35,9 @@ function onput(version) {
         if (!response.ok) {
             throw new Error(response.error)
         }
+        response.headers.forEach(function(val, key) {
+            document.getElementById('headers').value += '\n' + key + ': ' + val; 
+        });
         return response.json();
     })
     .then(data => {
