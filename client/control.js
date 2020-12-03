@@ -28,6 +28,7 @@ function onput(version) {
     fetch(url, {
         method : "PUT",
         mode: 'cors',
+        credentials: 'include',
         headers: headers,
         body: new URLSearchParams(new FormData(document.getElementById("form2"))),
     })
