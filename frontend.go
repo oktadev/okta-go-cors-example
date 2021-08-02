@@ -7,6 +7,6 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.Use(static.Serve("/", static.LocalFile("./client", false)))
+	r.Use(static.Serve("/", static.LocalFile("./frontend", false)))
 	r.Run(":8080")
 }

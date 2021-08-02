@@ -1,4 +1,4 @@
-function onget(version) {
+function onGet(version) {
     const url = "http://localhost:8000/api/" + version + "/messages";
     var headers = {}
 
@@ -21,7 +21,7 @@ function onget(version) {
     });
 }
 
-function onput(version) {
+function onPut(version) {
     const url = "http://localhost:8000/api/" + version + "/messages/0";
     var headers = { "X-Token": "abcd1234" }
 

@@ -2,7 +2,6 @@
     <head>
         <meta charset="UTF-8" />
         <title>Fixing Common Issues with CORS</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
         <script src="control.js" defer></script>
     </head>
     <body>
@@ -10,13 +9,13 @@
         <div class="centred">
             <textarea id="messages" name="messages" rows="10" cols="50">Messages</textarea><br/>
             <form id="form1">
-                <input type="button" value="Send v1" onclick="onget('v1')"/>
-                <input type="button" value="Send v2" onclick="onget('v2')"/>
+                <input type="button" value="Get v1" onclick="onGet('v1')"/>
+                <input type="button" value="Get v2" onclick="onGet('v2')"/>
             </form>
             <form id="form2">
                 <input type="text" id="puttext" name="puttext"/>
-                <input type="button" value="Send v1" onclick="onput('v1')"/>
-                <input type="button" value="Send v2" onclick="onput('v2')"/>
+                <input type="button" value="Put v1" onclick="onPut('v1')"/>
+                <input type="button" value="Put v2" onclick="onPut('v2')"/>
             </form>
             <textarea id="headers" name="headers" rows="10" cols="50">Headers</textarea><br/>
         </div>
